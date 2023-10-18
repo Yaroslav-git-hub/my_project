@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button, input[type="button"], input[type="submit"], input[type="reset"] {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="text"] {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border-bottom: 1px solid #cccccc;
+}
+
+
+ul, ol, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+

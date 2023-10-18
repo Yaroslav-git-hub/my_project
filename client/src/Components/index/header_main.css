@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Silkscreen:wght@400;700&display=swap');
+
+.header {
+    font-family: 'Noto Sans', sans-serif;
+    background: #151515;
+    color: #fff;
+    height: 100vh;
+    max-height: 100%;
+    width: 100%;
+}
+
+.header__container {
+    height: 100%;
+    max-width: 1420px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+}
+
+.header__left{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.header__logotype{
+    display: flex;
+    align-items: center;
+    gap: 1.25em;
+}
+
+.header__logo-name{
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 21px;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 2em;
+    position: relative;
+}
+
+.header__nav-item{
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.submenu {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-radius: 10px;
+    margin-top: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s ease-in-out;
+    transform: translateY(-10px);
+    color: #151515;
+    background: #fff;
+}
+
+.submenu li:hover{
+    color: #BBBDF6;
+}
+
+.header__nav-item:hover .submenu {
+    transform: translateY(0);
+}
+
+.submenu-enter {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.submenu-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.submenu-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.submenu-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.header__right{
+    display: flex;
+    gap: 1.15em;
+}
+
+.header__btn{
+    background-color: #ffffff;
+    border-radius: 7px;
+    padding: 5px 10px;
+    font-size: 14px;
+    transition: color .3s , box-shadow .45s ease-in-out;
+}
+
+.header__search-btn{
+    font-weight: 600;
+}
+
+.header__btn:hover{
+    color: #565be9;
+    box-shadow: 0 0 5px #ffffff;
+}
+
+
+
+
+
+.modal-enter {
+    opacity: 0;
+}
+
+.modal-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.modal-exit {
+    opacity: 1;
+}
+
+.modal-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.header__search-modal {
+    width: 100%;
+    height: 95px;
+    background: white;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header__search-block{
+    height: 100%;
+    max-width: 1420px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3em;
+}
+
+.header__btn-search{
+    font-size: 25px;
+}
+
+.header__search-input{
+    width: 100%;
+    font-size: 26px;
+}
+
+.header__search-items{
+    height: 100%;
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 20px 25px;
+
+}
+
+.header__search-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.header__search-item{
+    background-color: #fff;
+    color: #151515;
+    padding: 10px 15px;
+    border-bottom: 1px solid #cccccc;
+    cursor: pointer;
+    transition: all .35s ease-in-out;
+}
+
+.header__search-item:hover{
+    color: #565be9;
+}
+
+.header__search-item:last-child{
+    border-bottom: none;
+    border-radius: 0 0 10px 10px;
+}
+
+
+.header__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.header__menu{
+    font-family: 'Silkscreen', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.header__menu-logo{
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 75px;
+}
+
+.header__menu-description{
+    font-family: 'Noto Sans', sans-serif;
+    color: #ccc;
+    max-width: 700px;
+
+}
+
